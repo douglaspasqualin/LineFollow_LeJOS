@@ -1,0 +1,289 @@
+linking and uploading using arguments tfg.LineFollow --classpath C:\Projetos_Java\LineFollow\bin;\LineFollow\src;C:\ProgramFiles\lejos_nxj\lib\classes.jar --writeorder LE -o C:\Projetos_Java\LineFollow\bin\LineFollow.nxj -u -r --verbose
+Linking...
+Class 0: java.lang.Object
+Class 1: java.lang.Thread
+Class 2: java.lang.String
+Class 3: java.lang.Throwable
+Class 4: java.lang.Error
+Class 5: java.lang.OutOfMemoryError
+Class 6: java.lang.NoSuchMethodError
+Class 7: java.lang.StackOverflowError
+Class 8: java.lang.NullPointerException
+Class 9: java.lang.ClassCastException
+Class 10: java.lang.ArithmeticException
+Class 11: java.lang.ArrayIndexOutOfBoundsException
+Class 12: java.lang.IllegalArgumentException
+Class 13: java.lang.InterruptedException
+Class 14: java.lang.IllegalStateException
+Class 15: java.lang.IllegalMonitorStateException
+Class 16: java.lang.ThreadDeath
+Class 17: tfg.LineFollow
+Class 18: java.lang.Runnable
+Class 19: java.lang.System
+Class 20: java.lang.RuntimeException
+Class 21: java.lang.Exception
+Class 22: java.lang.StringBuilder
+Class 23: lejos.nxt.LCD
+Class 24: lejos.nxt.Button
+Class 25: lejos.nxt.Sound
+Class 26: lejos.nxt.LightSensor
+Class 27: lejos.navigation.TachoNavigator
+Class 28: lejos.nxt.Motor
+Class 29: lejos.nxt.SensorPort
+Class 30: tfg.sensors.VirtualLightSensor
+Class 31: tfg.subsumption.WalkForward
+Class 32: tfg.subsumption.HalfTurn
+Class 33: tfg.subsumption.FindLine
+Class 34: lejos.subsumption.Behavior
+Class 35: tfg.lejos.ArbitratorEx
+Class 36: tfg.lejos.Monitor
+Class 37: java.io.PrintStream
+Class 38: lejos.nxt.LCDOutputStream
+Class 39: java.lang.Math
+Class 40: lejos.nxt.Poll
+Class 41: lejos.nxt.SystemSettings
+Class 42: java.io.IOException
+Class 43: lejos.nxt.ADSensorPort
+Class 44: lejos.navigation.Pilot
+Class 45: lejos.nxt.BasicMotor
+Class 46: lejos.nxt.Motor$Regulator
+Class 47: lejos.nxt.Battery
+Class 48: lejos.nxt.MotorPort
+Class 49: java.io.OutputStream
+Class 50: java.util.Random
+Class 51: java.lang.Integer
+Class 52: java.lang.NumberFormatException
+Class 53: lejos.nxt.Flash
+Class 54: lejos.nxt.BasicSensorPort
+Class 55: lejos.nxt.BasicMotorPort
+Class 56: lejos.nxt.Tachometer
+Method 0: Class: java.lang.Object Signature: <init>()V PC 4037 Signature id 2
+Method 1: Class: java.lang.Object Signature: toString()Ljava/lang/String; PC 4038 Signature id 95
+Method 2: Class: java.lang.Thread Signature: init(Ljava/lang/String;Ljava/lang/Runnable;)V PC 4041 Signature id 97
+Method 3: Class: java.lang.Thread Signature: <init>()V PC 4084 Signature id 2
+Method 4: Class: java.lang.Thread Signature: <init>(Ljava/lang/Runnable;)V PC 4096 Signature id 99
+Method 5: Class: java.lang.Thread Signature: run()V PC 4108 Signature id 1
+Method 6: Class: java.lang.Thread Signature: start()V Native id 9
+Method 7: Class: java.lang.Thread Signature: yield()V Native id 10
+Method 8: Class: java.lang.Thread Signature: sleep(J)V Native id 11
+Method 9: Class: java.lang.Thread Signature: currentThread()Ljava/lang/Thread; Native id 12
+Method 10: Class: java.lang.Thread Signature: getPriority()I Native id 13
+Method 11: Class: java.lang.Thread Signature: setPriority(I)V Native id 14
+Method 12: Class: java.lang.Thread Signature: isDaemon()Z Native id 19
+Method 13: Class: java.lang.Thread Signature: setDaemon(Z)V Native id 18
+Method 14: Class: java.lang.String Signature: <init>([CII)V PC 4128 Signature id 101
+Method 15: Class: java.lang.String Signature: <init>([C)V PC 4156 Signature id 102
+Method 16: Class: java.lang.String Signature: length()I PC 4165 Signature id 103
+Method 17: Class: java.lang.String Signature: charAt(I)C PC 4171 Signature id 104
+Method 18: Class: java.lang.String Signature: toCharArray()[C PC 4178 Signature id 111
+Method 19: Class: java.lang.String Signature: valueOf(Ljava/lang/Object;)Ljava/lang/String; PC 4201 Signature id 113
+Method 20: Class: java.lang.String Signature: toString()Ljava/lang/String; PC 4215 Signature id 95
+Method 21: Class: java.lang.String Signature: equals(Ljava/lang/Object;)Z PC 4217 Signature id 94
+Method 22: Class: java.lang.Throwable Signature: <init>()V PC 4289 Signature id 2
+Method 23: Class: java.lang.Throwable Signature: getMessage()Ljava/lang/String; PC 4294 Signature id 30
+Method 24: Class: java.lang.Throwable Signature: toString()Ljava/lang/String; PC 4299 Signature id 95
+Method 25: Class: java.lang.IllegalArgumentException Signature: <init>()V PC 4304 Signature id 2
+Method 26: Class: tfg.LineFollow Signature: <init>()V PC 4309 Signature id 2
+Method 27: Class: tfg.LineFollow Signature: configuraVelocidade(I)I PC 4314 Signature id 115
+Method 28: Class: tfg.LineFollow Signature: calibraSensorLuz(Llejos/nxt/LightSensor;Llejos/nxt/LightSensor;)V PC 4432 Signature id 116
+Method 29: Class: tfg.LineFollow Signature: main([Ljava/lang/String;)V PC 4487 Signature id 0
+Method 30: Class: java.lang.Runnable Signature: run()V PC 0 Signature id 1
+Method 31: Class: java.lang.System Signature: arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V Native id 25
+Method 32: Class: java.lang.System Signature: currentTimeMillis()J Native id 22
+Method 33: Class: java.lang.System Signature: <clinit>()V PC 4661 Signature id 3
+Method 34: Class: java.lang.RuntimeException Signature: <init>()V PC 4696 Signature id 2
+Method 35: Class: java.lang.Exception Signature: <init>()V PC 4701 Signature id 2
+Method 36: Class: java.lang.StringBuilder Signature: <init>(Ljava/lang/String;)V PC 4706 Signature id 98
+Method 37: Class: java.lang.StringBuilder Signature: append(Ljava/lang/String;)Ljava/lang/StringBuilder; PC 4732 Signature id 118
+Method 38: Class: java.lang.StringBuilder Signature: append(I)Ljava/lang/StringBuilder; PC 4743 Signature id 119
+Method 39: Class: java.lang.StringBuilder Signature: appendInternal(Ljava/lang/String;)Ljava/lang/StringBuilder; PC 4933 Signature id 121
+Method 40: Class: java.lang.StringBuilder Signature: toString()Ljava/lang/String; PC 5023 Signature id 95
+Method 41: Class: java.lang.StringBuilder Signature: <clinit>()V PC 5040 Signature id 3
+Method 42: Class: lejos.nxt.LCD Signature: drawString(Ljava/lang/String;II)V Native id 40
+Method 43: Class: lejos.nxt.LCD Signature: refresh()V Native id 43
+Method 44: Class: lejos.nxt.LCD Signature: clear()V Native id 44
+Method 45: Class: lejos.nxt.LCD Signature: getDisplay()[B Native id 46
+Method 46: Class: lejos.nxt.LCD Signature: getSystemFont()[B Native id 49
+Method 47: Class: lejos.nxt.LCD Signature: <clinit>()V PC 5053 Signature id 3
+Method 48: Class: lejos.nxt.Button Signature: <init>(I)V PC 5066 Signature id 114
+Method 49: Class: lejos.nxt.Button Signature: getId()I PC 5084 Signature id 128
+Method 50: Class: lejos.nxt.Button Signature: isPressed()Z PC 5089 Signature id 129
+Method 51: Class: lejos.nxt.Button Signature: waitForPress()I PC 5106 Signature id 130
+Method 52: Class: lejos.nxt.Button Signature: getButtons()I Native id 51
+Method 53: Class: lejos.nxt.Button Signature: readButtons()I PC 5161 Signature id 131
+Method 54: Class: lejos.nxt.Button Signature: loadSettings()V PC 5205 Signature id 133
+Method 55: Class: lejos.nxt.Button Signature: <clinit>()V PC 5279 Signature id 3
+Method 56: Class: lejos.nxt.Sound Signature: systemSound(ZI)V PC 5380 Signature id 134
+Method 57: Class: lejos.nxt.Sound Signature: beep()V PC 5532 Signature id 135
+Method 58: Class: lejos.nxt.Sound Signature: pause(I)V PC 5538 Signature id 136
+Method 59: Class: lejos.nxt.Sound Signature: playFreq(III)V Native id 59
+Method 60: Class: lejos.nxt.Sound Signature: playTone(III)V PC 5548 Signature id 137
+Method 61: Class: lejos.nxt.Sound Signature: playTone(II)V PC 5574 Signature id 138
+Method 62: Class: lejos.nxt.Sound Signature: loadSettings()V PC 5582 Signature id 133
+Method 63: Class: lejos.nxt.Sound Signature: <clinit>()V PC 5593 Signature id 3
+Method 64: Class: lejos.nxt.LightSensor Signature: <init>(Llejos/nxt/ADSensorPort;)V PC 5702 Signature id 142
+Method 65: Class: lejos.nxt.LightSensor Signature: readValue()I PC 5734 Signature id 144
+Method 66: Class: lejos.nxt.LightSensor Signature: calibrateLow()V PC 5775 Signature id 145
+Method 67: Class: lejos.nxt.LightSensor Signature: calibrateHigh()V PC 5789 Signature id 146
+Method 68: Class: lejos.navigation.TachoNavigator Signature: <init>(FFLlejos/nxt/Motor;Llejos/nxt/Motor;)V PC 5803 Signature id 148
+Method 69: Class: lejos.navigation.TachoNavigator Signature: setSpeed(I)V PC 5854 Signature id 151
+Method 70: Class: lejos.navigation.TachoNavigator Signature: forward()V PC 5863 Signature id 152
+Method 71: Class: lejos.navigation.TachoNavigator Signature: stop()V PC 5893 Signature id 154
+Method 72: Class: lejos.navigation.TachoNavigator Signature: isMoving()Z PC 5905 Signature id 155
+Method 73: Class: lejos.navigation.TachoNavigator Signature: rotate(F)V PC 5913 Signature id 158
+Method 74: Class: lejos.navigation.TachoNavigator Signature: rotate(FZ)V PC 5920 Signature id 159
+Method 75: Class: lejos.navigation.TachoNavigator Signature: updatePosition()V PC 5969 Signature id 164
+Method 76: Class: lejos.navigation.TachoNavigator Signature: normalize(F)F PC 6343 Signature id 166
+Method 77: Class: lejos.nxt.Motor Signature: <init>(Llejos/nxt/TachoMotorPort;)V PC 6377 Signature id 169
+Method 78: Class: lejos.nxt.Motor Signature: forward()V PC 6492 Signature id 152
+Method 79: Class: lejos.nxt.Motor Signature: backward()V PC 6539 Signature id 153
+Method 80: Class: lejos.nxt.Motor Signature: stop()V PC 6586 Signature id 154
+Method 81: Class: lejos.nxt.Motor Signature: updateState(I)V PC 6592 Signature id 170
+Method 82: Class: lejos.nxt.Motor Signature: isMoving()Z PC 6719 Signature id 155
+Method 83: Class: lejos.nxt.Motor Signature: rotate(IZ)V PC 6748 Signature id 171
+Method 84: Class: lejos.nxt.Motor Signature: rotateTo(IZ)V PC 6762 Signature id 173
+Method 85: Class: lejos.nxt.Motor Signature: regulateSpeed(Z)V PC 6867 Signature id 174
+Method 86: Class: lejos.nxt.Motor Signature: smoothAcceleration(Z)V PC 6884 Signature id 175
+Method 87: Class: lejos.nxt.Motor Signature: setSpeed(I)V PC 6895 Signature id 151
+Method 88: Class: lejos.nxt.Motor Signature: setPower(I)V PC 6968 Signature id 176
+Method 89: Class: lejos.nxt.Motor Signature: getSpeed()I PC 6991 Signature id 177
+Method 90: Class: lejos.nxt.Motor Signature: overshoot(I)I PC 6996 Signature id 178
+Method 91: Class: lejos.nxt.Motor Signature: isRotating()Z PC 7070 Signature id 179
+Method 92: Class: lejos.nxt.Motor Signature: timedOut()V PC 7075 Signature id 180
+Method 93: Class: lejos.nxt.Motor Signature: getTachoCount()I PC 7106 Signature id 182
+Method 94: Class: lejos.nxt.Motor Signature: resetTachoCount()V PC 7116 Signature id 183
+Method 95: Class: lejos.nxt.Motor Signature: access$000(Llejos/nxt/Motor;)F PC 7133 Signature id 184
+Method 96: Class: lejos.nxt.Motor Signature: access$100(Llejos/nxt/Motor;)I PC 7138 Signature id 185
+Method 97: Class: lejos.nxt.Motor Signature: access$202(Llejos/nxt/Motor;Z)Z PC 7143 Signature id 186
+Method 98: Class: lejos.nxt.Motor Signature: access$300(Llejos/nxt/Motor;)Z PC 7150 Signature id 187
+Method 99: Class: lejos.nxt.Motor Signature: access$400(Llejos/nxt/Motor;)Z PC 7155 Signature id 188
+Method 100: Class: lejos.nxt.Motor Signature: access$500(Llejos/nxt/Motor;)V PC 7160 Signature id 189
+Method 101: Class: lejos.nxt.Motor Signature: access$200(Llejos/nxt/Motor;)Z PC 7165 Signature id 190
+Method 102: Class: lejos.nxt.Motor Signature: access$600(Llejos/nxt/Motor;)I PC 7170 Signature id 191
+Method 103: Class: lejos.nxt.Motor Signature: access$700(Llejos/nxt/Motor;)I PC 7175 Signature id 192
+Method 104: Class: lejos.nxt.Motor Signature: access$800(Llejos/nxt/Motor;)Z PC 7180 Signature id 193
+Method 105: Class: lejos.nxt.Motor Signature: access$900(Llejos/nxt/Motor;)B PC 7185 Signature id 194
+Method 106: Class: lejos.nxt.Motor Signature: access$1000(Llejos/nxt/Motor;)I PC 7190 Signature id 195
+Method 107: Class: lejos.nxt.Motor Signature: access$1100(Llejos/nxt/Motor;)I PC 7195 Signature id 196
+Method 108: Class: lejos.nxt.Motor Signature: access$802(Llejos/nxt/Motor;Z)Z PC 7200 Signature id 197
+Method 109: Class: lejos.nxt.Motor Signature: <clinit>()V PC 7207 Signature id 3
+Method 110: Class: lejos.nxt.SensorPort Signature: readRawValue()I PC 7247 Signature id 198
+Method 111: Class: lejos.nxt.SensorPort Signature: <init>(I)V PC 7255 Signature id 114
+Method 112: Class: lejos.nxt.SensorPort Signature: setTypeAndMode(II)V PC 7280 Signature id 199
+Method 113: Class: lejos.nxt.SensorPort Signature: setType(I)V PC 7291 Signature id 200
+Method 114: Class: lejos.nxt.SensorPort Signature: setMode(I)V PC 7329 Signature id 201
+Method 115: Class: lejos.nxt.SensorPort Signature: readSensorValue(I)I Native id 31
+Method 116: Class: lejos.nxt.SensorPort Signature: setADType(I)V PC 7335 Signature id 202
+Method 117: Class: lejos.nxt.SensorPort Signature: setPowerType(I)V PC 7344 Signature id 203
+Method 118: Class: lejos.nxt.SensorPort Signature: setADTypeById(II)V Native id 32
+Method 119: Class: lejos.nxt.SensorPort Signature: setPowerTypeById(II)V Native id 33
+Method 120: Class: lejos.nxt.SensorPort Signature: <clinit>()V PC 7353 Signature id 3
+Method 121: Class: tfg.sensors.VirtualLightSensor Signature: <init>(Llejos/nxt/LightSensor;Llejos/nxt/LightSensor;)V PC 7551 Signature id 204
+Method 122: Class: tfg.sensors.VirtualLightSensor Signature: getLightPercent()I PC 7600 Signature id 205
+Method 123: Class: tfg.sensors.VirtualLightSensor Signature: readValues()V PC 7775 Signature id 206
+Method 124: Class: tfg.sensors.VirtualLightSensor Signature: media()I PC 7872 Signature id 207
+Method 125: Class: tfg.subsumption.WalkForward Signature: <init>(Llejos/navigation/TachoNavigator;Ltfg/sensors/VirtualLightSensor;)V PC 7884 Signature id 208
+Method 126: Class: tfg.subsumption.WalkForward Signature: action()V PC 7899 Signature id 209
+Method 127: Class: tfg.subsumption.WalkForward Signature: suppress()V PC 7914 Signature id 210
+Method 128: Class: tfg.subsumption.WalkForward Signature: takeControl()Z PC 7922 Signature id 211
+Method 129: Class: tfg.subsumption.HalfTurn Signature: <init>(Llejos/navigation/TachoNavigator;)V PC 7938 Signature id 212
+Method 130: Class: tfg.subsumption.HalfTurn Signature: action()V PC 7960 Signature id 209
+Method 131: Class: tfg.subsumption.HalfTurn Signature: suppress()V PC 7994 Signature id 210
+Method 132: Class: tfg.subsumption.HalfTurn Signature: takeControl()Z PC 7995 Signature id 211
+Method 133: Class: tfg.subsumption.FindLine Signature: <init>(Llejos/navigation/TachoNavigator;Ltfg/sensors/VirtualLightSensor;)V PC 8031 Signature id 208
+Method 134: Class: tfg.subsumption.FindLine Signature: action()V PC 8064 Signature id 209
+Method 135: Class: tfg.subsumption.FindLine Signature: suppress()V PC 8225 Signature id 210
+Method 136: Class: tfg.subsumption.FindLine Signature: takeControl()Z PC 8233 Signature id 211
+Method 137: Class: tfg.subsumption.FindLine Signature: canStop()Z PC 8249 Signature id 213
+Method 138: Class: lejos.subsumption.Behavior Signature: takeControl()Z PC 0 Signature id 211
+Method 139: Class: lejos.subsumption.Behavior Signature: action()V PC 0 Signature id 209
+Method 140: Class: lejos.subsumption.Behavior Signature: suppress()V PC 0 Signature id 210
+Method 141: Class: tfg.lejos.ArbitratorEx Signature: <clinit>()V PC 8285 Signature id 3
+Method 142: Class: tfg.lejos.ArbitratorEx Signature: <init>([Llejos/subsumption/Behavior;)V PC 8290 Signature id 215
+Method 143: Class: tfg.lejos.ArbitratorEx Signature: setCurrentBehaviorIndex(I)V PC 8307 Signature id 216
+Method 144: Class: tfg.lejos.ArbitratorEx Signature: getCurrentBehaviorIndex()I PC 8313 Signature id 217
+Method 145: Class: tfg.lejos.ArbitratorEx Signature: start(Ltfg/lejos/Monitor;)V PC 8327 Signature id 218
+Method 146: Class: tfg.lejos.Monitor Signature: <init>([Llejos/subsumption/Behavior;Ltfg/lejos/ArbitratorEx;)V PC 8381 Signature id 219
+Method 147: Class: tfg.lejos.Monitor Signature: run()V PC 8396 Signature id 1
+Method 148: Class: java.io.PrintStream Signature: <init>(Ljava/io/OutputStream;)V PC 8493 Signature id 220
+Method 149: Class: lejos.nxt.LCDOutputStream Signature: <init>()V PC 8503 Signature id 2
+Method 150: Class: java.lang.Math Signature: floor(D)D PC 8513 Signature id 225
+Method 151: Class: java.lang.Math Signature: round(F)I PC 8530 Signature id 226
+Method 152: Class: java.lang.Math Signature: abs(I)I PC 8540 Signature id 214
+Method 153: Class: java.lang.Math Signature: sin(D)D PC 8551 Signature id 234
+Method 154: Class: java.lang.Math Signature: cos(D)D PC 8635 Signature id 235
+Method 155: Class: java.lang.Math Signature: toRadians(D)D PC 8718 Signature id 240
+Method 156: Class: java.lang.Math Signature: <clinit>()V PC 8724 Signature id 3
+Method 157: Class: lejos.nxt.Poll Signature: <init>(Z)V PC 8738 Signature id 243
+Method 158: Class: lejos.nxt.Poll Signature: <init>()V PC 8747 Signature id 2
+Method 159: Class: lejos.nxt.Poll Signature: setPoller()V Native id 34
+Method 160: Class: lejos.nxt.Poll Signature: <clinit>()V PC 8752 Signature id 3
+Method 161: Class: lejos.nxt.SystemSettings Signature: getSlot(Ljava/lang/String;)I PC 8764 Signature id 249
+Method 162: Class: lejos.nxt.SystemSettings Signature: setSlot(ILjava/lang/String;)V PC 8796 Signature id 250
+Method 163: Class: lejos.nxt.SystemSettings Signature: getValue(I)Ljava/lang/String; PC 8854 Signature id 251
+Method 164: Class: lejos.nxt.SystemSettings Signature: getStringSetting(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; PC 8926 Signature id 252
+Method 165: Class: lejos.nxt.SystemSettings Signature: getIntSetting(Ljava/lang/String;I)I PC 8953 Signature id 253
+Method 166: Class: lejos.nxt.SystemSettings Signature: setSetting(Ljava/lang/String;Ljava/lang/String;)V PC 8973 Signature id 254
+Method 167: Class: lejos.nxt.SystemSettings Signature: <clinit>()V PC 8995 Signature id 3
+Method 168: Class: lejos.nxt.ADSensorPort Signature: readRawValue()I PC 0 Signature id 198
+Method 169: Class: lejos.navigation.Pilot Signature: <init>(FFLlejos/nxt/Motor;Llejos/nxt/Motor;)V PC 9101 Signature id 148
+Method 170: Class: lejos.navigation.Pilot Signature: getLeftCount()I PC 9162 Signature id 282
+Method 171: Class: lejos.navigation.Pilot Signature: getRightCount()I PC 9175 Signature id 283
+Method 172: Class: lejos.navigation.Pilot Signature: setSpeed(I)V PC 9188 Signature id 151
+Method 173: Class: lejos.navigation.Pilot Signature: forward()V PC 9292 Signature id 152
+Method 174: Class: lejos.navigation.Pilot Signature: rotate(IZ)V PC 9320 Signature id 171
+Method 175: Class: lejos.navigation.Pilot Signature: stop()V PC 9380 Signature id 154
+Method 176: Class: lejos.navigation.Pilot Signature: isMoving()Z PC 9395 Signature id 155
+Method 177: Class: lejos.navigation.Pilot Signature: resetTachoCount()V PC 9441 Signature id 183
+Method 178: Class: lejos.navigation.Pilot Signature: bak()V PC 9456 Signature id 286
+Method 179: Class: lejos.navigation.Pilot Signature: fwd()V PC 9471 Signature id 287
+Method 180: Class: lejos.nxt.BasicMotor Signature: <init>()V PC 9486 Signature id 2
+Method 181: Class: lejos.nxt.Motor$Regulator Signature: <init>(Llejos/nxt/Motor;)V PC 9522 Signature id 288
+Method 182: Class: lejos.nxt.Motor$Regulator Signature: calcPower(I)I PC 9557 Signature id 289
+Method 183: Class: lejos.nxt.Motor$Regulator Signature: reset()V PC 9604 Signature id 280
+Method 184: Class: lejos.nxt.Motor$Regulator Signature: run()V PC 9677 Signature id 1
+Method 185: Class: lejos.nxt.Motor$Regulator Signature: stopAtLimit()V PC 10221 Signature id 290
+Method 186: Class: lejos.nxt.Motor$Regulator Signature: angleAtStop()I PC 10462 Signature id 291
+Method 187: Class: lejos.nxt.Battery Signature: getVoltageMilliVolt()I Native id 50
+Method 188: Class: lejos.nxt.Battery Signature: getVoltage()F PC 10529 Signature id 292
+Method 189: Class: lejos.nxt.MotorPort Signature: <init>(I)V PC 10539 Signature id 114
+Method 190: Class: lejos.nxt.MotorPort Signature: controlMotor(II)V PC 10554 Signature id 293
+Method 191: Class: lejos.nxt.MotorPort Signature: controlMotorById(III)V Native id 53
+Method 192: Class: lejos.nxt.MotorPort Signature: getTachoCount()I PC 10607 Signature id 182
+Method 193: Class: lejos.nxt.MotorPort Signature: getTachoCountById(I)I Native id 52
+Method 194: Class: lejos.nxt.MotorPort Signature: resetTachoCount()V PC 10618 Signature id 183
+Method 195: Class: lejos.nxt.MotorPort Signature: setPWMMode(I)V PC 10629 Signature id 294
+Method 196: Class: lejos.nxt.MotorPort Signature: resetTachoCountById(I)V Native id 54
+Method 197: Class: lejos.nxt.MotorPort Signature: <clinit>()V PC 10635 Signature id 3
+Method 198: Class: java.io.OutputStream Signature: <init>()V PC 10672 Signature id 2
+Method 199: Class: java.util.Random Signature: <init>(J)V PC 10677 Signature id 297
+Method 200: Class: java.lang.Integer Signature: parseInt(Ljava/lang/String;I)I PC 10693 Signature id 301
+Method 201: Class: java.lang.Integer Signature: parseInt(Ljava/lang/String;)I PC 10922 Signature id 302
+Method 202: Class: java.lang.Integer Signature: digit(CI)I PC 10929 Signature id 303
+Method 203: Class: java.lang.Integer Signature: digit(II)I PC 10935 Signature id 304
+Method 204: Class: java.lang.Integer Signature: toString(I)Ljava/lang/String; PC 11044 Signature id 305
+Method 205: Class: java.lang.Integer Signature: toString()Ljava/lang/String; PC 11157 Signature id 95
+Method 206: Class: java.lang.Integer Signature: <clinit>()V PC 11165 Signature id 3
+Method 207: Class: java.lang.NumberFormatException Signature: <init>()V PC 11193 Signature id 2
+Method 208: Class: lejos.nxt.Flash Signature: readPage([BI)V Native id 76
+Method 209: Class: lejos.nxt.Flash Signature: writePage([BI)V Native id 75
+Method 210: Class: lejos.nxt.Flash Signature: <clinit>()V PC 11198 Signature id 3
+Method 211: Class: lejos.nxt.BasicSensorPort Signature: setTypeAndMode(II)V PC 0 Signature id 199
+Method 212: Class: lejos.nxt.BasicMotorPort Signature: controlMotor(II)V PC 0 Signature id 293
+Method 213: Class: lejos.nxt.BasicMotorPort Signature: setPWMMode(I)V PC 0 Signature id 294
+Method 214: Class: lejos.nxt.Tachometer Signature: getTachoCount()I PC 0 Signature id 182
+Method 215: Class: lejos.nxt.Tachometer Signature: resetTachoCount()V PC 0 Signature id 183
+Master record    : 16 bytes.
+Class records    : 57 (570 bytes).
+Field records    : 127 (127 bytes).
+Static fields    : 45 (90 bytes).
+Static state     : 45 (178 bytes).
+Constant records : 68 (272 bytes).
+Constant values  : 68 (554 bytes).
+Method records   : 216 (2592 bytes).
+Exception records: 24 (192 bytes).
+Code             : 179 (7168 bytes).
+Total            : 11760 bytes.
+Uploading...
+Upload successful in 2500 milliseconds
+Program has been successfully uploaded to the NXT brick
