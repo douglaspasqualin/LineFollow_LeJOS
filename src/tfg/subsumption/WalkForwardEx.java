@@ -3,7 +3,9 @@ package tfg.subsumption;
 import tfg.sensors.VirtualLightSensor;
 import tfg.util.Black;
 import lejos.navigation.SimpleNavigator;
+import lejos.navigation.TachoPilot;
 import lejos.nxt.LCD;
+import lejos.nxt.Motor;
 import lejos.subsumption.Behavior;
 
 /**
@@ -25,30 +27,37 @@ import lejos.subsumption.Behavior;
 * @version 0.1
 */
 
-public class WalkForward implements Behavior
+public class WalkForwardEx implements Behavior
 {
 	SimpleNavigator robot;
 	VirtualLightSensor sensor;
+	Motor LeftMotor, RightMotor;
 	final int BLACK = Black.value;
 	
 	/**
 	 * Comportamento responsável por andar em linha reta 
-	 * enquanto estiver em cima da cor preta.
+	 * enquanto estiver em cima da cor preta.  <BR>
 	 * Método construtor, deve ser passado um <b>SimpleNavigator</b> e
 	 * um <b>VirtualLightSensor</b> já instanciados e configurados.
 	 * @param navigator objeto do tipo <b>lejos.navigation.SimpleNavigator</b> 
 	 * @param sensor objeto do tipo <b>VirtualLightSensor</b> 
 	 */		
-	public WalkForward(SimpleNavigator navigator, VirtualLightSensor sensor)
+	public WalkForwardEx(SimpleNavigator navigator, VirtualLightSensor sensor)
 	{
 		this.robot = navigator;
 		this.sensor = sensor;
+		this.LeftMotor = ((TachoPilot)robot.getPilot()).getLeft();
+		this.RightMotor = ((TachoPilot)robot.getPilot()).getRight();
 	}
 
 	public void action() 
 	{
-		LCD.drawString("Walk     ", 1, 2);
-		robot.forward();
+		LCD.clear();
+		LCD.drawString("WalkEx   ", 1, 2);
+		System.out.println(Integer.toString(RightMotor.getSpeed()) + " ->");		
+		System.out.println("<- " + Integer.toString(LeftMotor.getSpeed()));
+		if (!robot.isMoving())
+			this.forward();
 	}
 
 	public void suppress() 
@@ -59,6 +68,15 @@ public class WalkForward implements Behavior
 	public boolean takeControl() 
 	{
 		return sensor.getLightPercent() <= BLACK;
+	}
+
+	/** Não pode usar o forward do SimpleNavigator / TachoPilot, pois ele força os dois motores <BR>
+	 * a ficarem com a mesma velocidade, não é esse objetivo do experimento. <BR>
+	 * Implementado um forward local*/	
+	private void forward()
+	{
+		LeftMotor.forward();		
+		RightMotor.forward();
 	}
 
 }

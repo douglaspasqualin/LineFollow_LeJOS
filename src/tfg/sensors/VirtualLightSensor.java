@@ -15,7 +15,7 @@ import lejos.nxt.LightSensor;
  *	<b>UNIFRA - Centro Universitário Franciscano</b> <BR>
  *	Graduação em Sistemas de Informação <BR>
  *	Trabalho Final de Graduação, 1º Sem/2009 <BR>
- *	<b>Orientador:</b> Prof. MsC. Guilherme Dhein <BR>
+ *	<b>Orientador:</b> Prof. MSc. Guilherme Dhein <BR>
  *	<b>Orientando:</b> Douglas Pereira Pasqualin <BR>
  *   <BR>
  *	<b>COPYLEFT</b> (Todos os direitos de reprodução autorizados deste que
@@ -23,7 +23,7 @@ import lejos.nxt.LightSensor;
  * **********************************************************************
  * 
  * @author <a href="mailto:douglas.pasqualin@gmail.com">Douglas Pasqualin</a>
- * @version 0.1
+ * @version 0.5
 */
 
 public class VirtualLightSensor 
@@ -49,9 +49,9 @@ public class VirtualLightSensor
 		qtdeRep1 = 0;
 		qtdeRep2 = 0;
 		lastValue1 = -1000;
-		lastValue2 = -1000;
+		lastValue2 = -1000;	
 	}
-	
+
 	/**
 	 * Método responsável por retornar a leitura do sensor de luz que estiver ativo. <BR>
 	 * @return Retorna valor lido pelo sensor, tenta retornar o valor do primeiro sensor, <BR>
@@ -62,28 +62,30 @@ public class VirtualLightSensor
 	{
 		readValues();
 		
-		isValid1 = (value1 > -50 && value1 < 130) && qtdeRep1 < 100;
-		isValid2 = (value2 > -50 && value2 < 130) && qtdeRep2 < 100;
+		isValid1 = (value1 >= -30 && value1 <= 130); //&& qtdeRep1 <= 100;
+		isValid2 = (value2 >= -30 && value2 <= 130); //&& qtdeRep2 <= 100;
 		
 		if (!isValid1)
 			LCD.drawString("1 falhou", 1, 4);
 		else
 			LCD.drawString("         ", 1, 4);
 		if (!isValid2)
-			LCD.drawString("2 falhou", 1, 5);
+			LCD.drawString("2 falhou", 1, 5); 
 		else
 			LCD.drawString("         ", 1, 5);
 
 		//Se os dois são válidos retorna a média das leituras
 		if (isValid1 && isValid2)
-			return media();
-		//Se caiu aqui um dos dois não é válido. Se o primeiro for
-		//válido retorna o valor do primeiro
+			return average();
+		
+		/** Se caiu aqui um dos dois não é válido ou não é para usar a média. 
+		   Se o primeiro for válido retorna o valor do primeiro */
 		if (isValid1)
 			return value1;
-		//Se caiu aqui somente o segundo é válido ou nenhum dos dois é válido
-		//se o segundo for válido retorna valor do segundo, senão -1000
+		/** Se caiu aqui somente o segundo é válido ou nenhum dos dois é válido
+		    se o segundo for válido retorna valor do segundo, senão -1000 */
 		return isValid2 ? value2 : -1000;
+
 	}
 	
 	/**
@@ -115,7 +117,7 @@ public class VirtualLightSensor
 	 * Método que retorna a média dos sensores lidos
 	 * @return Média da leitura dos dois sensores
 	 */
-	private int media()
+	private int average()
 	{
 		return (value1 + value2) / 2;
 	}

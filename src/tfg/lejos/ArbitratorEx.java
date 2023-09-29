@@ -51,6 +51,7 @@ public class ArbitratorEx {
 	         behaviors[currentBehaviorIndex].action();
 	         
 	      } while (!Button.ESCAPE.isPressed());
+	      System.exit(0);
 	   }
 
 	}

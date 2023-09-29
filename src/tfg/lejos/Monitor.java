@@ -43,7 +43,8 @@ public class Monitor implements Runnable {
 	         }
 	         
 	         Thread.yield();
-	      } // while loop      
+	      } // while loop  
+	      System.exit(0);
 	   }   
 	   
 	} 
